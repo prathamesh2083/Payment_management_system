@@ -1,0 +1,32 @@
+<%- include("header") -%>
+<!-- pay.ejs -->
+<div class="box" >
+        
+   
+    
+    <div class="check_balance_page" >
+        <% if(locals.userfound){ %>
+                 <form action="/pay" method="post">
+
+                <input class="display" type="number" placeholder="Enter amount" name="amount">   </input>
+                <input  type="hidden"  name="phone_number" value=<% userfound %> >    </input>
+                
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Pay</button>
+          </form>
+        <% }else if(!locals.result){ %>
+
+            <form action="/find_phone" method="post">
+
+                <input class="display" type="number" placeholder="Enter phone number" name="phone_number">   </input>
+                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enter</button>
+            </form>
+            
+
+        <% }else{ %>
+
+        <div class="display" > <%= result %>  </div>
+        <% } %>
+    </div>
+</div>
+
+<%- include("footer") -%> 

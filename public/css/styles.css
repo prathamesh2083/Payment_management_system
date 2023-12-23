@@ -1,0 +1,155 @@
+ .nav-item {
+     padding: 2px;
+     font-weight: 500;
+     font-size: medium;
+     border-radius: 5px;
+ }
+
+ .nav-item:hover {
+     background-color: rgba(211, 204, 204, 0.262);
+ }
+
+ .nav-link {
+     color: black;
+     font-size: 1.2rem;
+ }
+
+ /*  carasoul css */
+ .carousel-item {
+     border: 1px solid rgb(201, 197, 197);
+ }
+
+ /* video */
+ .row div {
+     margin: 30px 0px;
+ }
+
+ div h5 {
+     font-size: x-large;
+ }
+
+ @media (max-width: 767.98px) {
+     .video-heading {
+         text-align: center;
+     }
+ }
+
+ /* footer */
+ 
+ .log_out_btn {
+     padding: 10px;
+     font-size: large;
+     font-weight: 700;
+     background-color: white;
+     border: none;
+ }
+
+ .nav-item:hover {
+     .log_out_btn {
+         background-color: rgba(211, 204, 204, 0.262);
+     }
+ }
+footer {
+    background-color: rgb(128, 56, 195);
+    height: auto;
+}
+
+.footer-div {
+    margin-top: 60px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .footer-div {
+        font-size: 1rem;
+    }
+}
+ footer {
+     background-color: rgb(33, 33, 97);
+     color: white;
+    
+
+ }
+
+ footer p {
+     font-size: large;
+ }
+
+ /*  add money page css */
+         #add_money_input {
+             text-align: center;
+             margin: 20px;
+             height: 40px;
+             width: 50%;
+             border-radius: 5px;
+         }
+         .check_balance_page{
+            text-align: center;
+            margin: 10%;
+         }
+         .display{
+            font-size: large;
+            background-color: white;
+            font-weight:600;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid black;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+           
+         }
+         .box {
+           
+             font-weight: 400;
+             background-color: rgb(201, 201, 208);
+             border: 1px solid rgb(121, 118, 118);
+             display: flex;
+             flex-direction: column;
+             border-radius: 10px;
+             justify-content: center;
+             margin: auto;
+             margin-bottom: 45px;
+             margin-top: 50px;
+             text-align: center;
+             height: 350px;
+             width: 40%;
+             
+    
+         }
+                  #add_money_label {
+                      font-size: larger;
+                  }
+/* History page css */
+
+.transction{
+    
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+   background-color: rgb(200, 196, 196);
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.history_container{
+    margin-bottom: 40px;
+}
+#history_footer{
+    /* position: -webkit-sticky;
+   */
+    position: fixed;
+    
+    width: 100%;
+    bottom: 0;
+}
+.name,.date,.action{
+    font-size: large;
+    font-weight:500;
+}

@@ -1,0 +1,43 @@
+<%- include("header") -%>
+
+<div class="history_container">
+    <div class="transction">
+       <div class="name"> Phone number</div>
+       <div class="name"> Username</div>
+       <div class="name"> Date</div>
+       <div class="name"> Amount</div>
+       <div class="name"> </div>
+</div>
+<% for(var i=transactions.length-1;i>=0;i--){ %>
+      <div class="transction">
+        <div class="name"> <%=  transactions[i].phone_number%></div>
+    <div class="name"> <%=  transactions[i].name%></div>
+    <div class="date"><%=  transactions[i].date%></div>
+    <% if(transactions[i].amount >0){ %>
+    <div class="action" style="color: green;"><%=  transactions[i].amount%></div>
+    <% }else{ %>
+        <div class="action" style="color: red;"><%=  transactions[i].amount%></div>
+        <% } %>
+    <form action="/find_phone" method="post">
+
+        <input type="hidden" name="phone_number" value=<%=transactions[i].phone_number %>>
+        <button type="submit" class="btn btn-primary">Pay</button>
+    </form>
+</div>
+    <% } %>
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,19 @@
+<%- include("header") -%>
+
+<div class="box" >
+        
+
+        <div class="check_balance_page">
+           <% if(locals.account_num){ %>
+    <div class="display">Account number : XXXXXXXX<%= account_num %>  </div>
+    <% }%>
+    
+    <div class="display">Account balance  :  ₹ <%= balance %>  </div>
+    
+        </div>
+   
+    
+</div>
+   
+
+<%- include("footer") -%> 
